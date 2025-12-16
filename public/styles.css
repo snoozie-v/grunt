@@ -1,0 +1,226 @@
+/* Define CSS variables for easy theming and maintenance */
+/* Adapted for a rural handyman service: Earthy greens and browns for reliability, craftsmanship, and rural feel; 
+   with navy blue accents for trust and professionalism. Green checkmarks evoke "job done right." */
+:root {
+    --primary-color: #228B22; /* Forest green for buttons and accents – reliable and earthy */
+    --secondary-color: #166d16; /* Darker green for hover */
+    --background-color: #f5f5dc; /* Light beige/cream for a warm, rural, welcoming background */
+    --form-background: #ffffff; /* White form for clean contrast */
+    --text-color: #333333; /* Dark text for readability */
+    --accent-color: #228B22; /* Matching green for checkmarks and positive elements */
+    --heading-color: #3e2723; /* Deep brown for headings – conveys strength and craftsmanship */
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-medium: rgba(0, 0, 0, 0.15);
+    --border-radius: 8px;
+    --transition-speed: 0.3s;
+}
+
+/* Global styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+    font-family: 'Lato', sans-serif;
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px 0;
+    line-height: 1.6;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+#intro {
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px var(--shadow-light);
+    transition: box-shadow var(--transition-speed);
+}
+
+#intro:hover {
+    box-shadow: 0 6px 16px var(--shadow-medium);
+}
+
+#intro ul, p {
+    max-width: 75%;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 1em;
+    color: var(--heading-color); /* Brown for a grounded, professional feel */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+p {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 1.5em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px var(--shadow-light);
+    object-fit: cover;
+    transition: transform var(--transition-speed);
+}
+
+.hero-image:hover {
+    transform: scale(1.02);
+}
+
+#subscribeForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: var(--form-background);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px var(--shadow-light);
+    transition: transform var(--transition-speed);
+}
+
+#subscribeForm:focus-within {
+    transform: translateY(-2px);
+}
+
+#subscribeForm label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    text-align: left;
+    width: 100%;
+}
+
+#subscribeForm input,
+#subscribeForm textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color var(--transition-speed);
+}
+
+#subscribeForm input:focus,
+#subscribeForm textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(34, 139, 34, 0.25); /* Green focus ring */
+}
+
+#subscribeForm button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+
+#subscribeForm button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-1px);
+}
+
+#subscribeForm button:active {
+    transform: translateY(0);
+}
+
+footer {
+    margin-top: auto;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #666;
+    border-top: 1px solid #eee;
+    width: 100%;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    #intro {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #subscribeForm {
+        max-width: 100%;
+        padding: 20px 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px 0;
+    }
+
+    #intro {
+        padding: 10px;
+    }
+
+    #subscribeForm {
+        padding: 15px 10px;
+        gap: 10px;
+    }
+
+    #subscribeForm input,
+    #subscribeForm textarea,
+    #subscribeForm button {
+        padding: 10px;
+    }
+}
