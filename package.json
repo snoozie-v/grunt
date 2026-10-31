@@ -1,0 +1,13 @@
+{
+  "name": "jr-grunt-werks",
+  "version": "1.0.0",
+  "private": true,
+  "description": "J & R Grunt Werks LLC plumbing website",
+  "scripts": {
+    "build": "node build/generate.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "nodemailer": "^7.0.5"
+  }
+}
