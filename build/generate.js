@@ -203,7 +203,7 @@ const quoteForm = (pageKey, cityName) => `
     <div class="field field-full"><label for="service">What do you need?</label>
       <select id="service" name="service" required><option value="" disabled selected>Choose one…</option>${serviceOptions()}</select></div>
     <div class="field field-full"><label for="message">Tell us about the job <span class="optional">(optional)</span></label>
-      <textarea id="message" name="message" rows="4" placeholder="e.g. 40 gal propane water heater leaking at the bottom, about 12 years old"></textarea></div>
+      <textarea id="message" name="message" rows="4" placeholder="e.g. 40 gal electric water heater leaking at the bottom, about 12 years old"></textarea></div>
     <button class="btn btn-call" type="submit">Request free estimate</button>
     <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
   </form>
@@ -332,7 +332,7 @@ for (const c of cities) {
   const faqs = [
     who,
     { q: `How much does a plumber cost in ${c.name}, MN?`, a: `It depends on the job. J & R Grunt Werks gives free estimates in ${c.name} and confirms the price before any work starts. Call or text 320-815-0900 with a description or photo of the problem.` },
-    { q: `What plumbing services do you offer in ${c.name}?`, a: `In ${c.name}, J & R Grunt Werks repairs and replaces water heaters (electric, gas, and propane), fixes leaks and frozen pipes, installs faucets, toilets, sinks, and garbage disposals, handles small bathroom and kitchen remodel plumbing, and opens and winterizes cabins.` },
+    { q: `What plumbing services do you offer in ${c.name}?`, a: `In ${c.name}, J & R Grunt Werks repairs and replaces electric water heaters, fixes leaks and frozen pipes, installs faucets, toilets, sinks, and garbage disposals, and handles small bathroom and kitchen remodel plumbing.` },
     ...c.extraFaqs,
     { q: `Can you finish my job in one visit?`, a: `Most water heater replacements, leak repairs, and fixture installs that J & R Grunt Werks does in ${c.name} are finished in a single visit.` },
   ];
@@ -353,7 +353,7 @@ for (const c of cities) {
             text: `J & R Grunt Werks is a licensed, bonded, and insured plumber serving ${c.name}, MN, with water heater repair and replacement, leak repair, fixture installation, and small remodel plumbing. Most jobs are done in one visit.`,
             bullets: [
               ['Service area', c.areaNote],
-              ['Services', 'Water heaters, leaks, fixtures, small remodels, cabin open and close'],
+              ['Services', 'Water heaters, leaks, fixtures, small remodels'],
               ['Credentials', 'Licensed, bonded, and insured in Minnesota'],
               ['Pricing', 'Free estimate, price confirmed before work starts'],
             ],

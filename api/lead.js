@@ -12,7 +12,6 @@ const SERVICES = {
   'leak-repair': 'Leak repair',
   'fixture-installation': 'Fixture install',
   'bathroom-remodel': 'Small remodel',
-  'cabin-plumbing': 'Cabin open / close',
   other: 'Something else',
 };
 

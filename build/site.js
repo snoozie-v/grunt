@@ -33,14 +33,14 @@ const services = [
     slug: 'water-heater-repair',
     name: 'Water Heater Repair & Replacement',
     cardName: 'Water Heaters',
-    cardText: 'Repair or replace electric, natural gas, and propane tank water heaters. Most swaps are done in one visit.',
+    cardText: 'Repair or replace electric tank water heaters. Most swaps are done in one visit.',
     title: 'Water Heater Repair & Replacement in Carlos & Alexandria, MN | J & R Grunt Werks',
-    description: 'Licensed plumber for water heater repair and replacement in Carlos, Alexandria, and Douglas County, MN. Electric, gas, propane. Most done in one visit.',
+    description: 'Licensed plumber for water heater repair and replacement in Carlos, Alexandria, and Douglas County, MN. Electric tank heaters, most done in one visit.',
     h1: 'Water Heater Repair & Replacement in Douglas County, MN',
     quick: {
-      text: 'J & R Grunt Werks is a licensed, bonded, and insured plumber in Carlos, MN that repairs and replaces tank water heaters (electric, natural gas, and propane) across Carlos, Alexandria, Miltona, and the surrounding lakes area. Most like-for-like replacements are finished in a single visit.',
+      text: 'J & R Grunt Werks is a licensed, bonded, and insured plumber in Carlos, MN that repairs and replaces electric tank water heaters across Carlos, Alexandria, Miltona, and the surrounding lakes area. Most like-for-like replacements are finished in a single visit.',
       bullets: [
-        ['Fuel types', 'Electric, natural gas, and propane'],
+        ['Type', 'Electric tank water heaters'],
         ['Typical job', 'Repair or full replacement, usually one visit'],
         ['Service area', 'Carlos, Alexandria, Miltona, Garfield, Osakis, and nearby'],
         ['Pricing', 'Free estimate, price confirmed before work starts'],
@@ -48,7 +48,7 @@ const services = [
     },
     who: {
       q: 'Who replaces water heaters in Carlos and Alexandria, MN?',
-      a: 'J & R Grunt Werks, a licensed, bonded, and insured plumbing company based in Carlos, MN, replaces and repairs water heaters throughout Douglas County. Owners John Kimble and Ryan Dickelman handle electric, natural gas, and propane tank heaters for homes, farms, and lake cabins in Carlos, Alexandria, Miltona, Garfield, and Osakis.',
+      a: 'J & R Grunt Werks, a licensed, bonded, and insured plumbing company based in Carlos, MN, replaces and repairs water heaters throughout Douglas County. Owners John Kimble and Ryan Dickelman handle electric tank water heaters for homes, farms, and lake cabins in Carlos, Alexandria, Miltona, Garfield, and Osakis.',
     },
     sections: [
       {
@@ -59,27 +59,27 @@ const services = [
           'Water pooling around the base of the tank',
           'Running out of hot water faster than you used to',
           'A tank that is 10 or more years old',
-          'Pilot that will not stay lit, or a breaker that keeps tripping',
+          'No hot water at all, or a breaker that keeps tripping',
         ],
       },
       {
         h2: 'Repair or replace?',
         p: [
-          'A lot of water heater problems are a single part: a heating element or thermostat on an electric unit, a thermocouple or gas control on a gas or propane unit, or a leaking relief valve or drain valve. Those are usually quick repairs.',
+          'A lot of water heater problems are a single part: a burned-out heating element, a bad thermostat, or a leaking relief valve or drain valve. Those are usually quick repairs.',
           'If the tank itself is leaking, it is time to replace. Hard water is common in central Minnesota, and the sediment it leaves behind shortens tank life. Most tank water heaters last somewhere around 8 to 12 years. We will tell you straight whether a repair is worth it.',
         ],
       },
       {
-        h2: 'Propane and well-water homes',
+        h2: 'Well-water homes',
         p: [
-          'Outside city limits, a lot of homes and cabins around Carlos and Miltona run propane water heaters and private wells. We work on both every week. If you are moving from propane to electric, or the other way around, we can talk through what makes sense for your setup.',
+          'Outside city limits, a lot of homes around Carlos and Miltona are on private wells, and hard well water is tough on electric elements and tanks. We work on these setups every week and can tell you what will hold up best.',
         ],
       },
     ],
     faqs: [
-      { q: 'How long does a water heater replacement take?', a: 'Most like-for-like tank water heater replacements by J & R Grunt Werks are finished in a single visit. Jobs that change fuel type, location, or venting can take longer, and we will tell you that up front.' },
-      { q: 'How much does water heater replacement cost in Douglas County, MN?', a: 'Cost depends on tank size, fuel type (electric, gas, or propane), and how the existing heater is installed. J & R Grunt Werks gives free estimates and confirms the price before any work starts. Call or text 320-815-0900.' },
-      { q: 'Do you work on propane water heaters?', a: 'Yes. Propane water heaters are common in rural homes and lake cabins around Carlos, Miltona, and Alexandria, and J & R Grunt Werks repairs and replaces them.' },
+      { q: 'How long does a water heater replacement take?', a: 'Most like-for-like tank water heater replacements by J & R Grunt Werks are finished in a single visit. Jobs that move the heater or change its size can take longer, and we will tell you that up front.' },
+      { q: 'How much does water heater replacement cost in Douglas County, MN?', a: 'Cost depends on tank size, the model you choose, and how the existing heater is installed. J & R Grunt Werks gives free estimates and confirms the price before any work starts. Call or text 320-815-0900.' },
+      { q: 'Do you work on gas or propane water heaters?', a: 'No. J & R Grunt Werks works on electric tank water heaters only.' },
       { q: 'Why is my water heater making a popping noise?', a: 'Popping or rumbling usually means sediment has built up in the bottom of the tank, which is common with hard water in central Minnesota. Flushing the tank can help if the heater is younger. On an older tank it is often a sign replacement is coming.' },
     ],
   },
@@ -129,7 +129,7 @@ const services = [
       {
         h2: 'Minnesota winters and frozen pipes',
         p: [
-          'Pipes in exterior walls, crawlspaces, and unheated cabins are the first to freeze when temperatures drop. When a frozen line splits, it often does not leak until it thaws. If you have had a pipe freeze, keep an eye on it. We can repair the damaged section and talk through insulation, heat tape, or rerouting so it does not happen again. Heading out of the cabin for the season? See [cabin winterization](/cabin-plumbing).',
+          'Pipes in exterior walls, crawlspaces, and unheated cabins are the first to freeze when temperatures drop. When a frozen line splits, it often does not leak until it thaws. If you have had a pipe freeze, keep an eye on it. We can repair the damaged section and talk through insulation, heat tape, or rerouting so it does not happen again.',
         ],
       },
     ],
@@ -234,60 +234,6 @@ const services = [
       { q: 'Do you do full-scale remodels?', a: 'J & R Grunt Werks focuses on the plumbing for small bathroom and kitchen remodels: fixture swaps, shower conversions, and short moves of drains and supply lines. For larger projects, we are happy to work alongside your general contractor.' },
     ],
   },
-  {
-    slug: 'cabin-plumbing',
-    name: 'Cabin Opening, Closing & Winterization',
-    cardName: 'Cabin Open & Close',
-    cardText: 'Spring start-up and fall winterization for lake cabins around Lake Carlos, Lake Miltona, and the Alexandria chain of lakes.',
-    title: 'Cabin Winterization & Spring Opening Plumbing in Carlos & Alexandria, MN | J & R Grunt Werks',
-    description: 'Cabin plumbing winterization and spring start-up around Lake Carlos, Lake Miltona, and Alexandria lakes. Licensed plumber based in Carlos, MN.',
-    h1: 'Cabin Winterization & Spring Opening in the Alexandria Lakes Area',
-    quick: {
-      text: 'J & R Grunt Werks winterizes and opens lake cabin plumbing around Carlos, Miltona, Alexandria, and Osakis. In the fall we drain the system and water heater and protect traps and toilets from freezing. In the spring we turn the water back on, start the water heater, and check for freeze damage.',
-      bullets: [
-        ['Fall closing', 'Drain lines and water heater, protect traps and toilets'],
-        ['Spring opening', 'Turn water on, start water heater, check for leaks'],
-        ['Lakes', 'Lake Carlos, Lake Miltona, the Alexandria chain, Lake Osakis'],
-        ['Book early', 'Fall closings fill up before the first hard freeze'],
-      ],
-    },
-    who: {
-      q: 'Who winterizes cabin plumbing near Alexandria and Carlos, MN?',
-      a: 'J & R Grunt Werks, a licensed, bonded, and insured plumbing company based in Carlos, MN, winterizes and opens lake cabin plumbing around Lake Carlos, Lake Miltona, the Alexandria chain of lakes, and Lake Osakis.',
-    },
-    sections: [
-      {
-        h2: 'Fall closing',
-        list: [
-          'Shut off and drain the water supply',
-          'Drain the water heater',
-          'Clear water from the lines',
-          'Add non-toxic antifreeze to sink, tub, and shower traps and toilets',
-          'Note anything that should be fixed before spring',
-        ],
-      },
-      {
-        h2: 'Spring opening',
-        list: [
-          'Restore water and refill the system',
-          'Refill and restart the water heater',
-          'Check every fixture and visible line for freeze damage and leaks',
-          'Fix small problems on the spot',
-        ],
-      },
-      {
-        h2: 'Why it matters up here',
-        p: [
-          'An unheated cabin with water left in the lines can crack pipes, fittings, toilets, and water heaters over a single Minnesota winter, and you may not find out until spring. A proper closing is cheap insurance. If a pipe does freeze, see [leak repair](/leak-repair).',
-        ],
-      },
-    ],
-    faqs: [
-      { q: 'When should I winterize my cabin in Minnesota?', a: 'Before the first hard freeze, which in the Alexandria lakes area usually means sometime in the fall. J & R Grunt Werks recommends booking early because fall closings fill up quickly.' },
-      { q: 'What does cabin winterization include?', a: 'J & R Grunt Werks shuts off and drains the water supply and water heater, clears water from the lines, and adds non-toxic antifreeze to traps and toilets so nothing cracks over the winter.' },
-      { q: 'Do you open cabins in the spring too?', a: 'Yes. J & R Grunt Werks restores water, restarts the water heater, and checks fixtures and lines for freeze damage at cabins around Carlos, Miltona, Alexandria, and Osakis.' },
-    ],
-  },
 ];
 
 // ---------------------------------------------------------------- cities
@@ -303,7 +249,7 @@ const cities = [
     local: {
       h2: 'Plumbing for Alexandria homes and lake places',
       p: [
-        'Alexandria has a little of everything: older homes near downtown, newer neighborhoods on the edges of town, and lake homes and cabins along the chain of lakes. In town you are mostly on city water; a few miles out, private wells and propane are common. We work on all of it.',
+        'Alexandria has a little of everything: older homes near downtown, newer neighborhoods on the edges of town, and lake homes and cabins along the chain of lakes. In town you are mostly on city water; a few miles out, private wells are common. We work on all of it.',
         'We are based in Carlos, just north of Alexandria, so getting to you is easy.',
       ],
     },
@@ -316,18 +262,17 @@ const cities = [
     slug: 'miltona',
     name: 'Miltona',
     geo: { lat: 46.0444, lng: -95.2931 },
-    description: 'Licensed plumber serving Miltona, MN and Lake Miltona. Water heaters, leaks, fixtures, and cabin winterization. Based next door in Carlos.',
+    description: 'Licensed plumber serving Miltona, MN and Lake Miltona. Water heaters, leak repair, fixtures, and small remodels. Based next door in Carlos.',
     quickExtra: 'We are based next door in Carlos, so Miltona and Lake Miltona are close to home.',
     areaNote: 'Miltona, Lake Miltona, and the surrounding farms and townships',
     local: {
       h2: 'Plumbing around Miltona and Lake Miltona',
       p: [
-        'Between Lake Miltona cabins, year-round lake homes, and the farms around town, a lot of Miltona plumbing runs on private wells, septic, and propane water heaters. Those setups have their own quirks, and we work on them all the time.',
-        'Seasonal cabins on Lake Miltona are a big part of what we do in the spring and fall. See [cabin opening and winterization](/cabin-plumbing).',
+        'Between Lake Miltona cabins, year-round lake homes, and the farms around town, a lot of Miltona plumbing runs on private wells and septic. Those setups have their own quirks, and we work on them all the time.',
       ],
     },
     extraFaqs: [
-      { q: 'Do you work on cabins on Lake Miltona?', a: 'Yes. J & R Grunt Werks repairs plumbing and handles spring opening and fall winterization for cabins and lake homes on Lake Miltona.' },
+      { q: 'Do you work on cabins on Lake Miltona?', a: 'Yes. J & R Grunt Werks repairs plumbing and fixes leaks, water heaters, and fixtures for cabins and lake homes on Lake Miltona.' },
     ],
     nearby: ['alexandria', 'parkers-prairie', 'garfield'],
   },
@@ -341,11 +286,11 @@ const cities = [
     local: {
       h2: 'Plumbing for Osakis and Lake Osakis',
       p: [
-        'Lake Osakis sits on the Douglas and Todd county line, and the area around it is a mix of year-round homes, seasonal cabins, and farms. Hard well water, propane water heaters, and lines that need to make it through the winter are everyday work for us.',
+        'Lake Osakis sits on the Douglas and Todd county line, and the area around it is a mix of year-round homes, seasonal cabins, and farms. Hard well water and lines that need to make it through the winter are everyday work for us.',
       ],
     },
     extraFaqs: [
-      { q: 'Do you serve homes around Lake Osakis?', a: 'Yes. J & R Grunt Werks serves homes and cabins in Osakis and around Lake Osakis for water heaters, leaks, fixtures, small remodels, and cabin opening and closing.' },
+      { q: 'Do you serve homes around Lake Osakis?', a: 'Yes. J & R Grunt Werks serves homes and cabins in Osakis and around Lake Osakis for water heaters, leaks, fixtures, and small remodels.' },
     ],
     nearby: ['alexandria', 'miltona', 'garfield'],
   },
@@ -377,7 +322,7 @@ const cities = [
     local: {
       h2: 'Plumbing for Parkers Prairie',
       p: [
-        'Parkers Prairie sits just over the line in Otter Tail County, a short drive north of Carlos and Miltona. We take care of homes in town as well as farms and lake places in the surrounding countryside, where wells and propane are the norm.',
+        'Parkers Prairie sits just over the line in Otter Tail County, a short drive north of Carlos and Miltona. We take care of homes in town as well as farms and lake places in the surrounding countryside, where private wells are the norm.',
       ],
     },
     extraFaqs: [
@@ -394,9 +339,9 @@ const home = {
   description: 'Licensed, bonded, and insured plumber in Carlos, MN serving Alexandria and Douglas County. Water heaters, leaks, fixtures, and small remodels.',
   h1: 'Licensed Plumber in Carlos, MN',
   quick: {
-    text: 'J & R Grunt Werks LLC is a licensed, bonded, and insured plumbing company based in Carlos, MN, owned by John Kimble and Ryan Dickelman. They handle water heaters, leak repair, faucet and toilet installation, small bathroom and kitchen remodels, and cabin opening and winterization across Carlos, Alexandria, Miltona, and Douglas County. Most jobs are done in one visit.',
+    text: 'J & R Grunt Werks LLC is a licensed, bonded, and insured plumbing company based in Carlos, MN, owned by John Kimble and Ryan Dickelman. They handle water heaters, leak repair, faucet and toilet installation, and small bathroom and kitchen remodels across Carlos, Alexandria, Miltona, and Douglas County. Most jobs are done in one visit.',
     bullets: [
-      ['Services', 'Water heaters, leaks, fixtures, small remodels, cabin open and close'],
+      ['Services', 'Water heaters, leaks, fixtures, small remodels'],
       ['Service area', 'Carlos, Alexandria, Miltona, Garfield, Osakis, Parkers Prairie, and nearby'],
       ['Credentials', 'Licensed, bonded, and insured in Minnesota'],
       ['Pricing', 'Free estimate, price confirmed before work starts'],
@@ -411,7 +356,7 @@ const home = {
     { q: 'Is J & R Grunt Werks licensed and insured?', a: 'Yes. J & R Grunt Werks LLC is licensed, bonded, and insured in Minnesota.' },
     { q: 'How much does a plumber cost in Carlos, MN?', a: 'It depends on the job. J & R Grunt Werks gives free estimates and confirms the price before any work begins, with no surprise charges. Call or text 320-815-0900.' },
     { q: 'Can you finish my job in one visit?', a: 'Most of what J & R Grunt Werks does, including water heater replacements, leak repairs, and fixture installs, is finished in a single visit. Bigger jobs like remodels are planned out ahead of time so you know what to expect.' },
-    { q: 'Do you work on homes with private wells and propane?', a: 'Yes. Many homes and cabins around Carlos, Miltona, and rural Douglas County run on private wells and propane water heaters, and J & R Grunt Werks works on them every week.' },
+    { q: 'Do you work on homes with private wells?', a: 'Yes. Many homes and cabins around Carlos, Miltona, and rural Douglas County run on private wells, and J & R Grunt Werks works on them every week.' },
   ],
 };
 
